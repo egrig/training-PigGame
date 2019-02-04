@@ -59,7 +59,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         // Add CURRENT score to GLOBAL score
         scores[activePlayer] += roundScore;
 
-        // Update UI
+        // Update the UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         
         var input = document.querySelector('.final-score').value;
