@@ -30,7 +30,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             roundScore += dice1 + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else {
-            //Next player
+            //One of the dice was rolled to a 1
+            //switch to next player
             nextPlayer();
         }
         
@@ -103,8 +104,8 @@ function nextPlayer() {
     //document.querySelector('.player-0-panel').classList.remove('active');
     //document.querySelector('.player-1-panel').classList.add('active');
 
-    document.getElementById('dice-1').style.display = 'none';
-    document.getElementById('dice-2').style.display = 'none';
+    document.getElementById('dice-1').style.display = 'block';
+    document.getElementById('dice-2').style.display = 'block';
 }
 
 document.querySelector('.btn-new').addEventListener('click', init);
